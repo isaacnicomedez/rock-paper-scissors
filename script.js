@@ -12,4 +12,14 @@ function getComputerChoice() {
     }
 }
 
+function playRound() {
+
+}
+
+function getHumanChoice() {
+    const choiceValue = prompt(`Choose (Rock / Paper / Scissors): `);
+    return choiceValue;
+}
+
+getHumanChoice;
 console.log(getComputerChoice());
