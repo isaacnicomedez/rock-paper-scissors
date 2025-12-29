@@ -62,5 +62,3 @@ function playGame() {
     }
     console.log(`Your score: ${humanScore}\nComputer score: ${computerScore}\nTies: ${ties}`);
 }
-
-playGame();
