@@ -54,13 +54,13 @@ function playRound(humanChoice, computerChoice) {
 }
 
 function playGame() {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
         const humanSelection = getHumanChoice();
         const computerSelection = getComputerChoice();
 
         console.log(playRound(humanSelection,computerSelection));
     }
-    console.log(`Your score: ${humanScore}\nComputer score: ${computerScore}`);
+    console.log(`Your score: ${humanScore}\nComputer score: ${computerScore}\nTies: ${ties}`);
 }
 
 playGame();
