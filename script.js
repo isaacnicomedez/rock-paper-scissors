@@ -1,4 +1,5 @@
-let humanScore = computerScore = 0;
+let humanScore = 0; 
+let computerScore = 0;
 
 function getComputerChoice() {
     const randomValue = Math.floor((Math.random() * 3));
@@ -24,6 +25,30 @@ function playRound(humanChoice, computerChoice) {
     
     if (humanChoice === computerChoice) {
         return "Tie!";
+    } else if (humanChoice === 'rock') {
+        if (computerChoice === 'scissors') {
+            humanScore++;
+            return "You win!";
+        } else {
+            computerScore++;
+            return "You lose!";
+        }
+    } else if (humanChoice === 'paper') {
+        if (computerChoice === 'rock') {
+            humanScore++;
+            return "You win!";
+        } else {
+            computerScore++;
+            return "You lose!";
+        }
+    } else if (humanChoice === 'scissors') {
+        if (computerChoice === 'paper') {
+            humanScore++;
+            return "You win!";
+        } else {
+            computerScore++;
+            return "You lose!";
+        }
     }
 }
 
